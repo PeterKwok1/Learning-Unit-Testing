@@ -1,0 +1,39 @@
+{
+  "name": "reader",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "BDD (Behavior Driven Development), Mocha, Chai\r         https://www.youtube.com/watch?v=u5cLK1UrFyQ - Up to: https://youtu.be/u5cLK1UrFyQ?t=5453",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js",
+    "serve": "node --watch server.js",
+    "test": "mocha tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^5.1.0",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "mocha": "^10.3.0",
+    "sass": "^1.69.4",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.10.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "jquery": "^3.7.1"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}
