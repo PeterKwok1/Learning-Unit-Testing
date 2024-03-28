@@ -77,6 +77,14 @@ describe('fire', () => {
         }
     })
 
+    after(() => { // setup phase, after (teardown). remove databases, etc. after tests to prevent pollution
+        console.log('entire test suite completed')
+    })
+
+    afterEach(() => {
+        console.log('one unit test completed')
+    })
+
     it('should record damage on the given players ship at a given coorindate', () => {
         fire(player, [0, 0])
 
