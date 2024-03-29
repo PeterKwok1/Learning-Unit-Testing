@@ -7,6 +7,11 @@ import { checkForShip, damageShip, fire } from '../game_logic/ship_methods.js'
 
 // mocha --watch does not currently support es module test files. 
 
+// stubs allow you to test components even if other components aren't funcitonal. They replace another component during testing. for instance, you may not know how a player will input params, but you know what you will recieve and wish to test the function. 
+// for instance, declaring a function which returns a set value and a state beforeEach() test. 
+
+// passing and executing done() will signal to mocha that this is an asynchronous test. otherwise, the tests will be evaluated synchronously. 
+
 // Test suite
 describe('Mocha', () => {
     // Test spec (unit test)
