@@ -1,6 +1,12 @@
 import { expect } from 'chai'
 import { checkForShip, damageShip, fire } from '../game_logic/ship_methods.js'
 
+// Mocha --reporter flag changes the reporter style. --reporter min abbreviates the passing tests and shows the failing ones. --reporter markdown gives you markdown which you can use as documentation. 
+
+// omitting the callback from describe or it makes it a pending test, tests which have not been written yet, useful for outlining your tests. 
+
+// mocha --watch does not currently support es module test files. 
+
 // Test suite
 describe('Mocha', () => {
     // Test spec (unit test)
@@ -107,16 +113,3 @@ describe('fire', () => {
     })
 })
 
-// function titleCase(title) {
-//     const words = title.split(' ')
-//     const titleCasedWords = words.map((word) => {
-//         return word[0].toUpperCase() + word.substring(1)
-//     })
-//     return titleCasedWords.join(' ')
-// }
-
-// expect(titleCase('the great mouse detective')).to.be.a('string')
-// expect(titleCase('a')).to.equal('A')
-// expect(titleCase('vertigo')).to.equal('Vertigo')
-
-// expect(titleCase('the great mouse detective')).to.equal('The Great Mouse Detective')
